@@ -1,0 +1,21 @@
+body{
+	
+	background-color: white;
+	max-width: 860px;
+	margin: auto;
+	margin-top: 50px;
+}
+header{
+	max-width: 860px;
+	background-color: yellow;
+	height: 100px;
+
+}
+
+footer{
+	max-width: 860px;
+	background-color: blue;
+	position: absolute;
+	margin-top: 100px;
+
+}
