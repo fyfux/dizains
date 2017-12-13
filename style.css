@@ -6,19 +6,37 @@ body{
 	margin-top: 50px;
 }
 header{
-	max-width: 860px;
+
+}
+#menu{
+	width: 900px;
 	background-color: yellow;
-	height: 100px;
+	height: 160px;
+	list-style:none;  /*--- Makes the bullets go away ---*/
+	margin:0;  /*--- Take out any default margin on the UL tag ---*/
+	padding:0;  /*--- Take out any default padding on the UL tag ---*/
+	margin:0 auto;
+
 }
 
+#menu li {
+	float: left;
+	margin: 0;
+	/*width: 100px;*/
+}
+
+#menu li a {
+	height: 150px;
+	width: 150px;
+	display: block;
+	overflow: hidden; /*--- Makes text outside of bounding box hidden ---*/}
 
 #main_box{
 	margin-top: 50px;
 	border-style: solid;
 	border-width: 2px;
 	max-width: 800px;
-	
-	margin-left: 100px;
+	margin-left: 160px;
 	min-height: 200px;
 }
 
@@ -34,3 +52,27 @@ footer.p{
 	color:red;
 	background-color: pink;
 }
+/*menu buttons*/
+
+li.home {background: url(logo_color.png) no-repeat; }
+li.home a {background: url(logo_bw.png) no-repeat; }
+li.home a:hover {background: url(logo_color.png) no-repeat; }
+
+li.berners {background: url(berners_color.png) no-repeat;}
+li.berners a {background: url(berners_bw.png) no-repeat; }
+li.berners a:hover {background: url(berners_color.png) no-repeat; }
+
+li.gates {background: url(gates_color.png) no-repeat;}
+li.gates a {background: url(gates_bw.png) no-repeat; }
+li.gates a:hover {background: url(gates_color.png) no-repeat; }
+
+li.jobs {background: url(jobs_color.png) no-repeat;}
+li.jobs a {background: url(jobs_bw.png) no-repeat; }
+li.jobs a:hover {background: url(jobs_color.png) no-repeat; }
+
+li.berners {background: url(berners_color.png) no-repeat;}
+li.berners a {background: url(berners_bw.png) no-repeat; }
+li.berners a:hover {background: url(berners_color.png) no-repeat; }
+
+/*li.home a {background: url(berners_color.png);}
+li a:hover {background: url(berners_color.png);}*/
