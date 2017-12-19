@@ -1,66 +1,109 @@
 body{
-	
 	background-color: white;
-	max-width: 860px;
-	margin: auto;
-	margin-top: 50px;
 }
-header{
 
+.container{
+	margin: 0 auto;
+	margin-top: 50px;
+	min-width: 175px;
+	max-width: 910px;
 }
-#menu{
+
+nav ul
+{
 	width: 900px;
-	background-color: yellow;
-	height: 160px;
+	height: auto;
 	list-style:none;  /*--- Makes the bullets go away ---*/
 	margin:0;  /*--- Take out any default margin on the UL tag ---*/
 	padding:0;  /*--- Take out any default padding on the UL tag ---*/
 	margin:0 auto;
-
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 #menu li {
 	float: left;
 	margin: 0;
-	/*width: 100px;*/
 }
 
 #menu li a {
 	height: 150px;
 	width: 150px;
+	background-size: auto;
 	display: block;
-	overflow: hidden; /*--- Makes text outside of bounding box hidden ---*/}
+	overflow: hidden; /*--- Makes text outside of bounding box hidden ---*/
+}
 
-#main_box{
-	margin-top: 50px;
+
+
+.content {
+  display: inline-block; /* inline block so the sidebar can be after the content in the markup */
+  width: 82%; 
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 50px;
+  margin-left: 160px;
+  margin-right: 10px;
+  height: auto;
+}
+
+.content_text{
+	display: block;
+	float: left;
+	width:60%; 
+	margin-left: 20px;
+	margin-right: 2px;
+    padding: 0;
+}
+
+img {
+	height: 100%;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.content_gallery{
+	margin-left: 0;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
 	border-style: solid;
 	border-width: 2px;
-	max-width: 800px;
-	margin-left: 160px;
-	min-height: 200px;
+	position: relative;
+	float: right;
+	width: 30%; 
+	height: auto;
+	
 }
 
 footer{
 	max-width: 860px;
-	background-color: blue;
-	margin-top: 100px;
+	margin-top: 10px;
 	height: 50px;
+	float: right;
+	margin-right: 10px;
+}
 
-}
-footer.p{
+footer p{
 	size: 14px;
-	color:red;
-	background-color: pink;
+	color: #333333;
 }
-/*menu buttons*/
+
+
+li a {font-size: 18px; }
+
+
 
 li.home {background: url(logo_color.png) no-repeat; }
 li.home a {background: url(logo_bw.png) no-repeat; }
 li.home a:hover {background: url(logo_color.png) no-repeat; }
 
+
 li.berners {background: url(berners_color.png) no-repeat;}
 li.berners a {background: url(berners_bw.png) no-repeat; }
 li.berners a:hover {background: url(berners_color.png) no-repeat; }
+
 
 li.gates {background: url(gates_color.png) no-repeat;}
 li.gates a {background: url(gates_bw.png) no-repeat; }
@@ -70,9 +113,109 @@ li.jobs {background: url(jobs_color.png) no-repeat;}
 li.jobs a {background: url(jobs_bw.png) no-repeat; }
 li.jobs a:hover {background: url(jobs_color.png) no-repeat; }
 
-li.berners {background: url(berners_color.png) no-repeat;}
-li.berners a {background: url(berners_bw.png) no-repeat; }
-li.berners a:hover {background: url(berners_color.png) no-repeat; }
+li.gosling {background: url(gosling_color.png) no-repeat;}
+li.gosling a {background: url(gosling_bw.png) no-repeat; }
+li.gosling a:hover {background: url(gosling_color.png) no-repeat; }
 
-/*li.home a {background: url(berners_color.png);}
-li a:hover {background: url(berners_color.png);}*/
+li.linus {background: url(linus_color.png) no-repeat;}
+li.linus a {background: url(linus_bw.png) no-repeat; }
+li.linus a:hover {background: url(linus_color.png) no-repeat; }
+
+
+
+
+@media screen and (max-width:917px){
+#menu{
+	width: 100%;
+}
+#menu li {
+	height: auto;
+	width: auto;
+	background-size: contain;
+}
+#menu li a {
+	height: 140px;
+	width: 140px;
+	background-size: contain;
+}
+.container { width: 100%;}
+
+.content{
+	width: 80%;
+}
+
+	.content_text {width: 60%;}
+
+	.content_gallery {width: 30%;}
+}
+
+@media screen and (max-width:866px){
+	#menu li a {
+		height: 130px;
+		width: 130px;
+	}
+}
+
+@media screen and (max-width:796px){
+	#menu li a {
+		height: 120px;
+		width: 120px;
+	}
+	.content{
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width:736px){
+	#menu li a {
+		height: 110px;
+		width: 110px;
+	}
+}
+
+@media screen and (max-width:676px){
+	#menu li a {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+@media screen and (max-width:615px){
+	#menu li a {
+		height: 90px;
+		width: 90px;
+	}
+}
+
+@media screen and (max-width:609px){
+	.content_text {width: 100%;
+		margin-left:  0;}
+		
+	.content_text p	{padding-left: 10px;
+		padding-right: 10px;}
+
+	.content_gallery {width: 98%;
+		margin: 5px;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width:555px){
+	#menu li a {
+		height: 80px;
+		width: 80px;
+	}
+}
+
+
+
+
+@media screen and (max-width:380px){
+	.content_gallery {width: 97%;}
+
+}
+
+@media screen and (max-width:340px){
+	.content_gallery {width: 96%;}
+}
