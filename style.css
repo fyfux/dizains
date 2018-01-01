@@ -34,13 +34,16 @@ nav ul
 	overflow: hidden; /*--- Makes text outside of bounding box hidden ---*/
 }
 
-
+h2{
+	margin-left: 10px;
+}
 
 .content {
   display: inline-block; /* inline block so the sidebar can be after the content in the markup */
   width: 82%; 
   border-style: solid;
   border-width: 2px;
+  border-color: #a8a59e;
   margin-top: 50px;
   margin-left: 160px;
   margin-right: 10px;
@@ -64,16 +67,18 @@ img {
 }
 .content_gallery{
 	margin-left: 0;
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
 	padding: 10px;
 	border-style: solid;
 	border-width: 2px;
+	border-color: #a8a59e;
 	position: relative;
 	float: right;
 	width: 30%; 
 	height: auto;
+	background-color: #bdbab3;
 	
 }
 
@@ -95,32 +100,35 @@ li a {font-size: 18px; }
 
 
 
-li.home {background: url(logo_color.png) no-repeat; }
-li.home a {background: url(logo_bw.png) no-repeat; }
-li.home a:hover {background: url(logo_color.png) no-repeat; }
+li.home  {background: url(img/menu/logo_color.png) no-repeat; }
+li.home a {background: url(img/menu/logo_bw.png) no-repeat; }
+li.home a:hover {background: url(img/menu/logo_color.png) no-repeat; }
+li.home_current a {background: url(img/menu/logo_color.png) no-repeat; }
 
+li.gates {background: url(img/menu/gates_color.png) no-repeat;}
+li.gates a {background: url(img/menu/gates_bw.png) no-repeat; }
+li.gates a:hover {background: url(img/menu/gates_color.png) no-repeat; }
+li.gates_current a {background: url(img/menu/gates_color.png) no-repeat; }
 
-li.berners {background: url(berners_color.png) no-repeat;}
-li.berners a {background: url(berners_bw.png) no-repeat; }
-li.berners a:hover {background: url(berners_color.png) no-repeat; }
+li.berners {background: url(img/menu/berners_color.png) no-repeat;}
+li.berners a {background: url(img/menu/berners_bw.png) no-repeat; }
+li.berners a:hover {background: url(img/menu/berners_color.png) no-repeat; }
+li.berners_current a {background: url(img/menu/berners_color.png) no-repeat; }
 
+li.gosling {background: url(img/menu/gosling_color.png) no-repeat;}
+li.gosling a {background: url(img/menu/gosling_bw.png) no-repeat; }
+li.gosling a:hover {background: url(img/menu/gosling_color.png) no-repeat; }
+li.gosling_current a {background: url(img/menu/gosling_color.png) no-repeat; }
 
-li.gates {background: url(gates_color.png) no-repeat;}
-li.gates a {background: url(gates_bw.png) no-repeat; }
-li.gates a:hover {background: url(gates_color.png) no-repeat; }
+li.jobs {background: url(img/menu/jobs_color.png) no-repeat;}
+li.jobs a {background: url(img/menu/jobs_bw.png) no-repeat; }
+li.jobs a:hover {background: url(img/menu/jobs_color.png) no-repeat; }
+li.jobs_current a {background: url(img/menu/jobs_color.png) no-repeat; }
 
-li.jobs {background: url(jobs_color.png) no-repeat;}
-li.jobs a {background: url(jobs_bw.png) no-repeat; }
-li.jobs a:hover {background: url(jobs_color.png) no-repeat; }
-
-li.gosling {background: url(gosling_color.png) no-repeat;}
-li.gosling a {background: url(gosling_bw.png) no-repeat; }
-li.gosling a:hover {background: url(gosling_color.png) no-repeat; }
-
-li.linus {background: url(linus_color.png) no-repeat;}
-li.linus a {background: url(linus_bw.png) no-repeat; }
-li.linus a:hover {background: url(linus_color.png) no-repeat; }
-
+li.linus {background: url(img/menu/linus_color.png) no-repeat;}
+li.linus a {background: url(img/menu/linus_bw.png) no-repeat; }
+li.linus a:hover {background: url(img/menu/linus_color.png) no-repeat; }
+li.linus_current a {background: url(img/menu/linus_color.png) no-repeat; }
 
 
 
@@ -144,10 +152,8 @@ li.linus a:hover {background: url(linus_color.png) no-repeat; }
 	width: 80%;
 }
 
-	.content_text {width: 60%;}
-
-	.content_gallery {width: 30%;}
-}
+.content_text {width: 60%;}
+.content_gallery {width: 30%;}
 
 @media screen and (max-width:866px){
 	#menu li a {
@@ -208,6 +214,13 @@ li.linus a:hover {background: url(linus_color.png) no-repeat; }
 	}
 }
 
+@media screen and (max-width:500px){
+	#menu li a {
+		height: 100px;
+		width: 100px;
+		margin: 0 auto;
+	}
+}
 
 
 
@@ -218,4 +231,10 @@ li.linus a:hover {background: url(linus_color.png) no-repeat; }
 
 @media screen and (max-width:340px){
 	.content_gallery {width: 96%;}
+}
+
+@media screen and (max-width:315px){
+	#menu li  {
+		margin: 0 auto;
+	}
 }
